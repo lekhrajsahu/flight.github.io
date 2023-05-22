@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="flight.css">
+    <script src="result.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    
+    
+    <div class="air">
+        <div class="im1"><img src="image/vistara.png" alt="vistara"> </div>
+        <div class="info"> VISTARA <br> UK3446</div>
+        <div class="start" id="departure1"></div>
+        <div class="ti" id="departure-time1"></div>
+        <div class="t" id="departure-date1"></div>
+        <div class="price" id="amount1"> </div>
+        <div class="land"><img src="image/takeoff.png"></div>
+        <div class="detime" id="arraival-time1"></div>
+        <div class="dedate" id="arraival-date1"></div>
+        <div class="end" id="arraival1"></div>
+        <div class="submit"><button onclick="storeFlightInformation(1)">BOOK</button></div>
+        <div class="flightclass" id="f_class1"></div>
+    </div>
+    
+    <br><br>
+    <div class="air">
+        <div class="im1"><img src="image/airasia.png" alt="airasia"> </div>
+        <div class="info"> AIR ASIA <br> AI496</div>
+        <div class="start" id="departure2"></div>
+        <div class="ti" id="departure-time2"></div>
+        <div class="t" id="departure-date2"></div>
+        <div class="price" id="amount2"> </div>
+        <div class="land"><img src="image/takeoff.png"></div>
+        <div class="detime" id="arraival-time2"></div>
+        <div class="dedate" id="arraival-date2"></div>
+        <div class="end" id="arraival2"></div>
+        <div class="submit"><button onclick="storeFlightInformation(2)">BOOK</button></div>
+        <div class="flightclass" id="f_class2"></div>
+    </div>
+    
+    <br><br>
+    <div class="air">
+        <div class="im1"><img src="image/indigo.png" alt="indigo"> </div>
+        <div class="info"> INDIGO <br> I6546</div>
+        <div class="start" id="departure3"></div>
+        <div class="ti" id="departure-time3"></div>
+        <div class="t" id="departure-date3"></div>
+        <div class="price" id="amount3"> </div>
+        <div class="land"><img src="image/takeoff.png"></div>
+        <div class="detime" id="arraival-time3"></div>
+        <div class="dedate" id="arraival-date3"></div>
+        <div class="end" id="arraival3"></div>
+        <div class="submit"><button onclick="storeFlightInformation(3)">BOOK</button></div>
+        <div class="flightclass" id="f_class3"></div>
+    </div>
+    
+    <br><br>
+    
+    <div class="air">
+        <div class="im1"><img src="image/SPICEJET.png" alt="SPICEJET"> </div>
+        <div class="info"> SPICEJET<br> SJ4864</div>
+        <div class="start" id="departure4"></div>
+        <div class="ti" id="departure-time4"></div>
+        <div class="t" id="departure-date4"></div>
+        <div class="price" id="amount4"> </div>
+        <div class="land"><img src="image/takeoff.png"></div>
+        <div class="detime" id="arraival-time4"></div>
+        <div class="dedate" id="arraival-date4"></div>
+        <div class="end" id="arraival4"></div>
+        <div class="submit"><button onclick="storeFlightInformation(4)">BOOK</button></div>
+        <div class="flightclass" id="f_class4"></div>
+    </div>
+    
+    <br><br>
+    <div class="air">
+        <div class="im1"><img src="image/AKASA.png" alt="AKASA"> </div>
+        <div class="info"> AKASA <br> AK864</div>
+        <div class="start" id="departure5"></div>
+        <div class="ti" id="departure-time5"></div>
+        <div class="t" id="departure-date5"></div>
+        <div class="price" id="amount5"> </div>
+        <div class="land"><img src="image/takeoff.png"></div>
+        <div class="detime" id="arraival-time5"></div>
+        <div class="dedate" id="arraival-date5"></div>
+        <div class="end" id="arraival5"></div>
+        <div class="submit"><button onclick="storeFlightInformation(5)">BOOK</button></div>
+        <div class="flightclass" id="f_class5"></div>
+    </div>
+    <br><br>
+    
+    <div class="air">
+        <div class="im1"><img src="image/airindia.png" alt="airindia"> </div>
+        <div class="info"> AIR INDIA <br> A16546</div>
+        <div class="start" id="departure6"></div>
+        <div class="ti" id="departure-time6"></div>
+        <div class="t" id="departure-date6"></div>
+        <div class="price" id="amount6"> </div>
+        <div class="land"><img src="image/takeoff.png"></div>
+        <div class="detime" id="arraival-time6"></div>
+        <div class="dedate" id="arraival-date6"></div>
+        <div class="end" id="arraival6"></div>
+        <div class="submit"><button onclick="storeFlightInformation(6)">BOOK</button></div>
+        <div class="flightclass" id="f_class6"></div>
+    </div>
+
+    <!-- Button to open the custom prompt -->
+    
+
+    <!-- Overlay and custom prompt container -->
+    <div id="overlay" class="overlay" style="display: none;">
+        <div class="prompt-container">
+            <h2>Booking Confirmation</h2>
+            
+            <div class="input-group">
+                <label for="nameInput">Name:</label>
+                <input type="text" id="nameInput" required pattern="[A-Za-z\s]+" title="Please enter alphabetic characters and spaces only">
+            </div>
+            
+            
+            <div class="input-group">
+                <label for="ageInput">Age:</label>
+                <input type="text" id="ageInput" required pattern="[0-9]+" title="Please enter numbers only" max="100">
+            </div>
+            
+            
+            <div class="input-group">
+                <label for="gender">Gender:</label>
+                <select id="genderInput" name="gender" required>
+                    <option value="">Please select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="mobileInput">Mobile No:</label>
+                <input type="text" id="mobileInput" required pattern="[0-9]{10}" title="Please enter a 10-digit mobile number">
+            </div>
+            <div class="input-group">
+                <label for="adultCount">Adults:</label>
+                <div class="counter">
+                    <button class="decrement" onclick="decrementCount('adultCount')">-</button>
+                    <input type="number" id="adultCount" min="1" value="1" readonly>
+                    <button class="increment" onclick="incrementCount('adultCount')">+</button>
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <label for="childCount">Children:</label>
+                <div class="counter">
+                    <button class="decrement" onclick="decrementCount('childCount')">-</button>
+                    <input type="number" id="childCount" min="0" value="0" readonly>
+                    <button class="increment" onclick="incrementCount('childCount')">+</button>
+                </div>
+            </div>
+            
+            
+            <div class="btn-container">
+                <button class="submit-btn" onclick="submitPrompt()">Submit</button>
+                <button class="cancel-btn" onclick="closePrompt()">Cancel</button>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+
+</html>

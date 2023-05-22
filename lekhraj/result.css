@@ -1,0 +1,55 @@
+body {
+    padding-top: 100px;
+    background: #cccccc;
+    color: #333;
+  }
+  
+  td, th {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: center;
+    height: 20px;
+    border-radius: 4px;
+  }
+  
+  table {
+    width: auto;
+    border-collapse: collapse;
+    border-radius: 4px;
+
+  }
+  table tr:hover {
+    background: linear-gradient(to bottom right, #d6a0a0, #ffcccc);
+  }
+  
+  
+  thead tr:nth-child(1) {
+    background: #ff445a;
+    background: -webkit-linear-gradient(119deg, #ff445a 0%, #68151d 100%);
+    background: linear-gradient(119deg, #ff445a 0%, #68151d 100%);
+    color: #fff;
+  }
+  
+  tbody {
+    background: #f3e0e0;
+  }
+  
+  button {
+    height: 34px;
+    width: 90px;
+    background: #ff445a;
+    background: -webkit-linear-gradient(119deg, #ff445a 0%, #68151d 100%);
+    background: linear-gradient(119deg, #ff445a 0%, #68151d 100%);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background: #68151d;
+    background: -webkit-linear-gradient(119deg, #68151d 0%, #ff445a 100%);
+    background: linear-gradient(119deg, #68151d 0%, #ff445a 100%);
+  }
+  

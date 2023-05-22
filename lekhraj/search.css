@@ -1,0 +1,54 @@
+body{
+    background: #ff445a;
+background: -webkit-linear-gradient(119deg, #ff445a 0%, #68151d 100%);
+background: linear-gradient(119deg, #ff445a 0%, #68151d 100%);
+    color: black;
+}
+.search{
+    flex: 1;
+    width: auto;
+    margin: 150px;
+    border-radius: 5px;
+}
+
+datalist option {
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  datalist option:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+  }
+  
+  datalist option:checked {
+    background-color: #d9edf7;
+    color: #31708f;
+  }
+  
+
+.box{
+    flex: auto;
+    justify-content: center;
+    padding: 100px ;
+}
+input{
+flex :1;
+height: 30px;
+background: whitesmoke;
+outline: 0;
+font-size: 18px;
+color: black;
+}
+button{
+    height: 34px;
+    width: 90px;
+    
+}
+
+
+

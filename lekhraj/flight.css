@@ -1,0 +1,264 @@
+body {
+
+  padding-bottom: 10%;
+  background-image: url("image/sky.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.air {
+  border: 1px solid grey;
+  background-color: rgb(183, 208, 216);
+  height: 130px;
+  width: 950px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  /* pointer-events: none; */
+  caret-color: transparent;
+  top: 100px;
+  left: 50px;
+}
+
+.im1 {
+  position: absolute;
+  top: 10px;
+  left: 6%;
+  transform: translateX(-50%);
+  height: auto;
+}
+
+.land {
+  width: 350px;
+  height: 100px;
+
+}
+
+.info {
+  position: absolute;
+  top: 80px;
+  left: 6.5%;
+  transform: translateX(-50%);
+  height: auto;
+}
+
+.start {
+  position: absolute;
+  top: 10px;
+  left: 20%;
+  transform: translateX(-50%);
+  height: auto;
+  font-size: 25px;
+
+}
+
+.end {
+  position: absolute;
+  top: 10px;
+  left: 74%;
+  transform: translateX(-50%);
+  height: auto;
+  font-size: 25px;
+
+}
+
+.detime {
+  position: absolute;
+  top: 40px;
+  left: 74%;
+  transform: translateX(-50%);
+  height: auto;
+  font-size: 25px;
+}
+
+.dedate {
+  position: absolute;
+  top: 70px;
+  left: 74%;
+  transform: translateX(-50%);
+  height: auto;
+
+}
+
+
+.ti {
+  position: absolute;
+  top: 40px;
+  left: 20%;
+  transform: translateX(-50%);
+  height: auto;
+  font-size: 25px;
+
+}
+
+.t {
+  position: absolute;
+  top: 70px;
+  left: 20%;
+  transform: translateX(-50%);
+  height: auto;
+
+}
+
+.flightclass {
+  position: absolute;
+  top: 5px;
+  left: 90%;
+  transform: translateX(-50%);
+  height: auto;
+  font-size: 25px;
+  font-family: "Rockwell";
+  color: #EC5B24;
+}
+
+.price {
+  position: absolute;
+  top: 23px;
+  left: 90%;
+  transform: translateX(-50%);
+  height: auto;
+  font-size: 36px;
+  font-family: "Rockwell";
+  color: #EC5B24;
+}
+
+.submit {
+  position: absolute;
+  top: 75px;
+  left: 90%;
+  transform: translateX(-50%);
+}
+
+.submit button {
+  width: 150px;
+  height: 40px;
+  color: whitesmoke;
+  background-color: rgb(236, 91, 36);
+
+}
+.submit button:hover {
+  background-color: rgb(255, 140, 0);
+}
+
+.land {
+  position: relative;
+  left: 26%;
+  top: 10%;
+}
+
+.land img {
+  height: 100px;
+  width: 400px;
+}
+
+
+
+
+/* prompt css  */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+
+.prompt-container {
+  background-color: #d9dcf1;
+  background-image: url(/lekhraj/image/sky.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.input-group label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.input-group input {
+  font-size: 25px;
+  padding: 10px;
+  font-weight: bold;
+  flex: 200px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-container button {
+  padding: 18px 36px;
+  font-size: 25px;
+  font-weight: 300;
+  margin: 0 5px;
+  background: linear-gradient(to right, #007BFF, #00BFFF);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-container button.cancel-btn:hover {
+  background: linear-gradient(to right, #FF4500, #FF0000);
+}
+.btn-container button.submit-btn:hover {
+  background: linear-gradient(to right, #008000, #00FF00);
+}
+
+select {
+  font-size: 25px;
+  padding: 15px;
+  flex: auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+}
+
+.counter input {
+  width: 60px;
+  text-align: center;
+  border-radius: 10px;
+
+}
+.counter button {
+  padding: 10px 10px;
+  border-radius: 10px;
+  font-size: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.counter button:hover {
+  background-color: #a699f1;
+}
